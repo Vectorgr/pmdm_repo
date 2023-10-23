@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.victorgr.aplicacionespmdm.BoardgamesApp.BoardgamesActivity
 import com.victorgr.aplicacionespmdm.HelloApp.HelloApp
 import com.victorgr.aplicacionespmdm.IMCApp.IMCCalculator
 import com.victorgr.aplicacionespmdm.MessageApp.Mensajeria
@@ -16,7 +17,7 @@ class MenuActivity: AppCompatActivity() {
         var btnHelloApp =  findViewById<Button>(R.id.btnHelloApp);
         var btnMensajeApp =  findViewById<Button>(R.id.btnMensajeApp);
         var btnIMCApp =  findViewById<Button>(R.id.btnIMCApp);
-
+        var btnBoardgameApp =  findViewById<Button>(R.id.btnBoardgameApp);
 
         btnHelloApp.setOnClickListener{
             navigateHelloApp();
@@ -26,6 +27,9 @@ class MenuActivity: AppCompatActivity() {
         }
         btnIMCApp.setOnClickListener{
             navigateIMCApp();
+        }
+        btnBoardgameApp.setOnClickListener{
+            navigateBoardgamesApp();
         }
 
     }
@@ -39,6 +43,10 @@ class MenuActivity: AppCompatActivity() {
     }
     fun navigateIMCApp(){
         var intent = Intent(this, IMCCalculator::class.java);
+        startActivity(intent);
+    }
+    fun navigateBoardgamesApp(){
+        var intent = Intent(this, BoardgamesActivity::class.java);
         startActivity(intent);
     }
 }

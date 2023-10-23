@@ -5,4 +5,9 @@
     <string name="height">Altura</string>
     <string name="peso">peso</string>
     <string name="age">edad</string>
+
+    <!-- BoardGames-->
+    <string name="bgtitulo">Juegos de mesa</string>
+    <string name="categories">categorias</string>
+    <string name="games">Juegos</string>
 </resources>
