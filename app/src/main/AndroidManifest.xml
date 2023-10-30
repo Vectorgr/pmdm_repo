@@ -13,9 +13,12 @@
         android:theme="@style/Theme.AplicacionesPMDM"
         tools:targetApi="31">
         <activity
-            android:name=".BoardgamesApp.BoardgamesActivity"
-            android:theme="@style/Theme.BoardgamesApp"
+            android:name=".PaletaColoresApp.PaletaColores"
             android:exported="false" />
+        <activity
+            android:name=".BoardgamesApp.BoardgamesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BoardgamesApp" />
         <activity
             android:name=".IMCApp.IMCResult"
             android:exported="false" />
@@ -43,9 +46,6 @@
         <activity
             android:name=".HelloApp.HelloApp"
             android:exported="false" />
-
-
     </application>
-
 
 </manifest>

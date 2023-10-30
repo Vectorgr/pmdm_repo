@@ -10,4 +10,14 @@
     <string name="bgtitulo">Juegos de mesa</string>
     <string name="categories">categorias</string>
     <string name="games">Juegos</string>
+    <string name="dialog_add_game">Añadir un juego</string>
+    <string name="dialog_cooperative_category">Cooperativo</string>
+    <string name="dialog_deckbuilding_category">Deckbuilding</string>
+    <string name="dialog_euro_category">Euro</string>
+    <string name="dialog_lcg_category">LCG</string>
+    <string name="dialog_legacy_category">Legacy</string>
+
+    <string name="dialog_newgame_button"> Nuevo juego</string>
+
+
 </resources>

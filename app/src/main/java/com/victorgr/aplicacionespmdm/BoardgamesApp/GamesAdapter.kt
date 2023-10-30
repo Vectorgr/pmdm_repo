@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.victorgr.aplicacionespmdm.R
 
 
-class GamesAdapter(private val games: MutableList<Games>) :
+class GamesAdapter(private val games: MutableList<Game>) :
     RecyclerView.Adapter<GamesViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GamesViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_game, parent, false)

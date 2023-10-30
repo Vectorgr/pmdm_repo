@@ -29,7 +29,7 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 divider.setBackgroundColor(
                     getColor(
                         divider.context,
-                        R.color.bgapp_cooperative_category
+                        R.color.bgapp_deckbuilding_category
                     )
                 )
             }
@@ -39,7 +39,7 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 divider.setBackgroundColor(
                     getColor(
                         divider.context,
-                        R.color.bgapp_cooperative_category
+                        R.color.bgapp_euro_category
                     )
                 )
             }
@@ -49,7 +49,7 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 divider.setBackgroundColor(
                     getColor(
                         divider.context,
-                        R.color.bgapp_cooperative_category
+                        R.color.bgapp_lcg_category
                     )
                 )
             }
@@ -59,12 +59,10 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                 divider.setBackgroundColor(
                     getColor(
                         divider.context,
-                        R.color.bgapp_cooperative_category
+                        R.color.bgapp_legacy_category
                     )
                 )
             }
-
-
         }
     }
 }
