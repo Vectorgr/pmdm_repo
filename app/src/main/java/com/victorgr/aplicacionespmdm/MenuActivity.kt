@@ -8,6 +8,7 @@ import com.victorgr.aplicacionespmdm.BoardgamesApp.BoardgamesActivity
 import com.victorgr.aplicacionespmdm.HelloApp.HelloApp
 import com.victorgr.aplicacionespmdm.IMCApp.IMCCalculator
 import com.victorgr.aplicacionespmdm.MessageApp.Mensajeria
+import com.victorgr.aplicacionespmdm.PaletaColoresApp.PaletaColores
 
 class MenuActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,7 @@ class MenuActivity: AppCompatActivity() {
         var btnMensajeApp =  findViewById<Button>(R.id.btnMensajeApp);
         var btnIMCApp =  findViewById<Button>(R.id.btnIMCApp);
         var btnBoardgameApp =  findViewById<Button>(R.id.btnBoardgameApp);
+        var btnPaletaColores = findViewById<Button>(R.id.btnPaletaColores);
 
         btnHelloApp.setOnClickListener{
             navigateHelloApp();
@@ -31,6 +33,10 @@ class MenuActivity: AppCompatActivity() {
         btnBoardgameApp.setOnClickListener{
             navigateBoardgamesApp();
         }
+        btnPaletaColores.setOnClickListener{
+            navigatePaletaColoresApp();
+        }
+
 
     }
     fun navigateHelloApp(){
@@ -47,6 +53,10 @@ class MenuActivity: AppCompatActivity() {
     }
     fun navigateBoardgamesApp(){
         var intent = Intent(this, BoardgamesActivity::class.java);
+        startActivity(intent);
+    }
+    fun navigatePaletaColoresApp(){
+        var intent = Intent(this, PaletaColores::class.java);
         startActivity(intent);
     }
 }

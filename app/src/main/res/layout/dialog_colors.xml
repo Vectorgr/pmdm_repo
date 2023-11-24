@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background_fab"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elige una barra"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <RadioGroup
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgBarras">
+
+                <RadioButton
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#33000000"
+                    android:text="H1 (20%)"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="H2 (50%)"
+                    app:buttonTint="#80000000"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#CC000000"
+                    android:text="H3 (80%)"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="V1 (20%)"
+                    app:buttonTint="#33000000"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="V2 (35%)"
+                    app:buttonTint="#59000000"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="V3 (50%)"
+                    app:buttonTint="#80000000"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#A6000000"
+                    android:text="V4 (65%)"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#CC000000"
+                    android:text="V5 (80%)"
+                    android:textColor="@color/white"
+                    />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elige un color"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgColor">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#FFFFFF"
+                    android:text="Blanco"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#FF0000"
+                    android:text="Rojo"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#FF9800"
+                    android:text="Naranja"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#FFEB3B"
+                    android:text="Amarillo"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#4CAF50"
+                    android:text="Verde"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#00FFE9"
+                    android:text="Cian"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#2196F3"
+                    android:text="Azul"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#9C27B0"
+                    android:text="Violeta"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:buttonTint="#000000"
+                    android:text="Negro"
+                    android:textColor="@color/white"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/background_button"
+        android:id="@+id/btnCambiarColorDialog"
+        android:text="Cambiar color"/>
+
+
+
+</LinearLayout>
