@@ -9,6 +9,7 @@ import com.victorgr.aplicacionespmdm.HelloApp.HelloApp
 import com.victorgr.aplicacionespmdm.IMCApp.IMCCalculator
 import com.victorgr.aplicacionespmdm.MessageApp.Mensajeria
 import com.victorgr.aplicacionespmdm.PaletaColoresApp.PaletaColores
+import com.victorgr.aplicacionespmdm.SuperHeroApp.SuperheroListActivity
 
 class MenuActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,7 @@ class MenuActivity: AppCompatActivity() {
         var btnIMCApp =  findViewById<Button>(R.id.btnIMCApp);
         var btnBoardgameApp =  findViewById<Button>(R.id.btnBoardgameApp);
         var btnPaletaColores = findViewById<Button>(R.id.btnPaletaColores);
+        var btnSuperheroes = findViewById<Button>(R.id.btnSuperheroesApp);
 
         btnHelloApp.setOnClickListener{
             navigateHelloApp();
@@ -35,6 +37,9 @@ class MenuActivity: AppCompatActivity() {
         }
         btnPaletaColores.setOnClickListener{
             navigatePaletaColoresApp();
+        }
+        btnSuperheroes.setOnClickListener{
+            navigateSuperheroesApp();
         }
 
 
@@ -57,6 +62,10 @@ class MenuActivity: AppCompatActivity() {
     }
     fun navigatePaletaColoresApp(){
         var intent = Intent(this, PaletaColores::class.java);
+        startActivity(intent);
+    }
+    fun navigateSuperheroesApp(){
+        var intent = Intent(this, SuperheroListActivity::class.java);
         startActivity(intent);
     }
 }

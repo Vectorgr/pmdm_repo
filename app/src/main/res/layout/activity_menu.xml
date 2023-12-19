@@ -45,6 +45,14 @@
         android:textSize="25sp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnSuperheroesApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Superheroes"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
 
 
 </LinearLayout>

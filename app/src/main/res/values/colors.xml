@@ -13,7 +13,9 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_700">#FF03DAC5</color>
+
+    <color name="violet35">#59B027AE</color>
 
     <color name="bgapp_background_card">#FF081A4A</color>
     <color name="bgapp_background_disabled">#04335C</color>
@@ -26,4 +28,13 @@
     <color name="bgapp_lcg_category">#4CAF50</color>
     <color name="bgapp_cooperative_category">#D016F1</color>
     <color name="bgapp_legacy_category">#EDF351</color>
+
+    <!--SuperheroApp-->
+    <color name="superhero_stat_intelligence">#00ff00</color>
+    <color name="superhero_stat_strength">#FF0000</color>
+    <color name="superhero_stat_speed">#E88B00</color>
+    <color name="superhero_stat_durability">#03A9F4</color>
+    <color name="superhero_stat_power">#FFEB3B</color>
+    <color name="superhero_stat_combat">#673AB7</color>
+
 </resources>
