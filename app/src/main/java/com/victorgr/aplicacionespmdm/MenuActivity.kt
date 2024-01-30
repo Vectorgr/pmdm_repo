@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.victorgr.aplicacionespmdm.BoardgamesApp.BoardgamesActivity
+import com.victorgr.aplicacionespmdm.GiphyApps.GiphyListActivity
 import com.victorgr.aplicacionespmdm.HelloApp.HelloApp
 import com.victorgr.aplicacionespmdm.IMCApp.IMCCalculator
 import com.victorgr.aplicacionespmdm.MessageApp.Mensajeria
@@ -22,6 +23,7 @@ class MenuActivity: AppCompatActivity() {
         var btnBoardgameApp =  findViewById<Button>(R.id.btnBoardgameApp);
         var btnPaletaColores = findViewById<Button>(R.id.btnPaletaColores);
         var btnSuperheroes = findViewById<Button>(R.id.btnSuperheroesApp);
+        var btnGiphys = findViewById<Button>(R.id.btnGiphyApp);
 
         btnHelloApp.setOnClickListener{
             navigateHelloApp();
@@ -40,6 +42,9 @@ class MenuActivity: AppCompatActivity() {
         }
         btnSuperheroes.setOnClickListener{
             navigateSuperheroesApp();
+        }
+        btnGiphys.setOnClickListener{
+            navigateGiphyApp();
         }
 
 
@@ -66,6 +71,10 @@ class MenuActivity: AppCompatActivity() {
     }
     fun navigateSuperheroesApp(){
         var intent = Intent(this, SuperheroListActivity::class.java);
+        startActivity(intent);
+    }
+    fun navigateGiphyApp(){
+        var intent = Intent(this, GiphyListActivity::class.java);
         startActivity(intent);
     }
 }

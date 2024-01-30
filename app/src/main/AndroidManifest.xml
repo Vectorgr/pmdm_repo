@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AplicacionesPMDM"
         tools:targetApi="31">
         <activity
+            android:name=".GiphyApps.GiphyListActivity"
+            android:exported="false" />
+        <activity
             android:name=".SuperHeroApp.DetailSuperheroActivity"
             android:exported="false" />
         <activity

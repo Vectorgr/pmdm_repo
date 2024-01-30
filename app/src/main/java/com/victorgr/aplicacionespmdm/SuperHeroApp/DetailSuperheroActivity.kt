@@ -38,7 +38,7 @@ class DetailSuperheroActivity : AppCompatActivity() {
     private fun getRetrofit(): Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("https://superheroapi.com/")
+            .baseUrl("https://superheroapi.com/api/1723778111442384/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -47,6 +47,7 @@ class DetailSuperheroActivity : AppCompatActivity() {
         binding.tvSuperheroName.text = superhero.name
         binding.tvSuperheroRealName.text = superhero.biography.fullName
         binding.tvPublisher.text = superhero.biography.publisher
+        binding.tvPrimeraAparicion.text = superhero.biography.primeraAparicion
 
         prepareStats(superhero.powerstats)
 

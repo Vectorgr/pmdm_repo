@@ -20,6 +20,7 @@ class SuperheroListActivity : AppCompatActivity() {
     private lateinit var retrofit: Retrofit
     private lateinit var adapter: SuperheroAdapter
 
+
     companion object {
         const val EXTRA_ID = "extra_id"
     }
@@ -53,6 +54,7 @@ class SuperheroListActivity : AppCompatActivity() {
     }
     private fun searchByName(query: String) {
         binding.progressBar.isVisible = true
+        binding.tvNotFound.isVisible = false
 
         CoroutineScope(Dispatchers.IO).launch {
             val myResponse: Response<SuperHeroDataResponse> =
@@ -61,12 +63,21 @@ class SuperheroListActivity : AppCompatActivity() {
                 val response: SuperHeroDataResponse? = myResponse.body()
                 if (response != null) {
                     Log.i("Cuerpo de la consulta", response.toString())
+
+
                     runOnUiThread {
-                        adapter.updateList(response.superheroes)
+                        if(response.superheroes !=null){
+                            adapter.updateList(response.superheroes)
+                        }else{
+                            binding.tvNotFound.isVisible = true
+
+                        }
+
                         binding.progressBar.isVisible = false
                     }
 
                 }
+
 
             } else {
                 Log.i("Consulta", "No funciona :(")
@@ -79,7 +90,7 @@ class SuperheroListActivity : AppCompatActivity() {
     private fun getRetrofit(): Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("https://superheroapi.com/")
+            .baseUrl("https://superheroapi.com/api/1723778111442384/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

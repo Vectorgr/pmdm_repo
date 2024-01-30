@@ -172,6 +172,24 @@
                 android:gravity="center"/>
 
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:textSize="20dp"
+            android:text="Primera aparición:"/>
+        <TextView
+            android:id="@+id/tvPrimeraAparicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:textSize="15dp"
+            tools:text="primeraAparicion"/>
+
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

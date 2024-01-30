@@ -6,5 +6,6 @@ data class SuperheroImageDetailResponse(@SerializedName("url") val url:String)
 
 data class Biography(
     @SerializedName("full-name") val fullName:String,
-    @SerializedName("publisher") val publisher:String
+    @SerializedName("publisher") val publisher:String,
+    @SerializedName("first-appearance") val primeraAparicion:String
 )
